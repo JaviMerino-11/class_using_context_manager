@@ -12,7 +12,7 @@ class Student(object):
     def __enter__(self):
         print('We are entering into Context Manager')
         print('The student data are:')
-        return list(self.data.values())
+        return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         print('Now that you know data from the student, we are exiting from Context Manager')
